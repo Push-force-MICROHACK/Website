@@ -1,0 +1,83 @@
+.footersection{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+.leftside{
+    width: 608px;
+    height: 128px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.603);
+}
+.footertext{
+ font-size: 48px;
+ line-height: 64px;
+}
+.rightside{
+    display: flex;
+    justify-content: space-evenly;
+    width: 602px;
+    padding-left: -10%;
+}
+.rightsides .title{
+    text-align: right;
+    line-height: 24px;
+    size: 16px;
+    font-weight: 900;
+    margin-bottom: 10%;
+}
+
+.rightsides .details{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.rightsides .details li{
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.514);
+}
+.line{
+    width: 90%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.226);
+    margin: auto;
+}
+.socialaccount{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 3.5%;
+    align-items: center;
+    padding: 20px;
+}
+.socialaccount .part1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.socialaccount .part1 h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 20px;
+}
+.socialaccount .part1 img{
+    width: 47px;
+    height: 55px;
+}
+.socialaccount .part2{
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    justify-content: space-between;
+}
+.socialaccount .part2 .icon{
+width: 24px;
+height: 24px;
+}
