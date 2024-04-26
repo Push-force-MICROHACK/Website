@@ -1,10 +1,9 @@
-import React from 'react'
-import Description from '../../Components/Description/Description'
-import Iframe from '../../Components/Iframe/Iframe'
-import HelpGuid from '../../Components/HelpGuide/HelpGuid'
-import WhyCongicore from '../../Components/WhyCognicore/WhyCognicore'
-import Features from '../../Components/Features/Features'
-import Subscription from '../../Components/Subscription/Subscription'
+import Description from "../../Components/Description/Description";
+import Iframe from "../../Components/Iframe/Iframe";
+import HelpGuid from "../../Components/HelpGuide/HelpGuid";
+import WhyCongicore from "../../Components/WhyCognicore/WhyCognicore";
+import Features from "../../Components/Features/Features";
+import Subscription from "../../Components/Subscription/Subscription";
 export default function Home() {
   return (
     <div>
@@ -14,6 +13,9 @@ export default function Home() {
       <div id="features" className="space-sections"><Features/></div>
       <div id="subscription" className="space-sections"><Subscription/></div>
       <div id="help-guide" className="space-sections"><HelpGuid/></div>
+      <div className="space-sections">
+        <Description />
+      </div>
     </div>
-  )
+  );
 }
