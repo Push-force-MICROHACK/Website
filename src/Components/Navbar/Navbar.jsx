@@ -1,22 +1,34 @@
-import React from 'react'
-import './Navbar.css'
-import logo from "../../assets/Frame2.svg"
+import React from 'react';
+import './Navbar.css';
+import logo from "../../assets/Frame2.svg";
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
 export default function Navbar() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <div className='navbar'>
       <div className='logo'>
         <img src={logo} alt='logo' className='image'/>
-        <h3 className='textlogo'> COGNICORE</h3>
+        <h3 className='textlogo' onClick={scrollToTop}>COGNICORE</h3>
       </div>
       <ul className='features1'>
-        <li className='feature'>Integration and APIs</li>
-        <li className='feature'>Resources</li>
-        <li className='feature'>Pricing</li>
+        <ScrollLink to="description" smooth={true} duration={500} offset={-50}>
+          <li className='feature'>Integration and APIs</li>
+        </ScrollLink>
+        <ScrollLink to="why-cognicore" smooth={true} duration={500} offset={-50}>
+          <li className='feature'>Resources</li>
+        </ScrollLink>
+        <ScrollLink to="subscription" smooth={true} duration={500} offset={-50}>
+          <li className='feature'>Pricing</li>
+        </ScrollLink>
       </ul>
       <div className='buttons'>
-        <button className='button '>Get your Api</button>
+        <button className='button'>Get your Api</button>
       </div>
     </div>
-  )
+  );
 }
-
