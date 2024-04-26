@@ -8,7 +8,7 @@ export default function Navbar() {
         <img src={logo} alt='logo' className='image'/>
         <h3 className='textlogo'> COGNICORE</h3>
       </div>
-      <ul className='features'>
+      <ul className='features1'>
         <li className='feature'>Integration and APIs</li>
         <li className='feature'>Resources</li>
         <li className='feature'>Pricing</li>

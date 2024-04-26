@@ -17,7 +17,7 @@ color: white;
     align-items: center;
     text-align: center;
 }
-.features{
+.features1{
     display: flex;
     flex-direction: row;
     width: 35% ;
@@ -38,7 +38,7 @@ height: 55px;
 .textlogo{
     font-size: 20px;
 }
-.features{
+.features1{
     width: 430px;
     height: 24px;
     top: 16px;

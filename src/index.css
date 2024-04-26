@@ -5,7 +5,6 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Poppins";
-  overflow-x: hidden;
 }
 
 :root {
@@ -34,4 +33,7 @@
 a,
 button {
   cursor: pointer;
+}
+.space-sections{
+  margin-block: 5%;
 }
