@@ -6,6 +6,9 @@
   margin: 0;
   font-family: "Poppins";
 }
+body{
+  background-color: black;
+}
 
 :root {
   line-height: 1.5;
