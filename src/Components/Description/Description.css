@@ -1,0 +1,64 @@
+.cognicore {
+    background: linear-gradient(to right, #8058B7, #C55DC6);
+    -webkit-background-clip: text; 
+    color: transparent; 
+}
+
+.text {
+    width: 100%;
+    max-width: 1062px;
+    height: 388px;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.text h2 {
+    font-size: 80px;
+}
+
+.font {
+    text-align: center;
+}
+
+.text2 {
+    width: 100%;
+    max-width: 869px;
+    height: 40px;
+    margin: auto;
+}
+
+.text2 h4 {
+    font-size: 24px;
+}
+
+.buttons2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+    margin: auto;
+}
+
+.button2 {
+    width: 170px;
+    height: 44px;
+    text-align: center;
+    align-items: center;
+    border-radius: 4px !important;
+    color: white;
+    background: linear-gradient(to right, #8058B7, #C55DC6);
+    border: 2px solid #c45dc688; 
+    margin-top: 15%;
+}
+
+.D3image {
+    position: absolute;
+    right: 6%;
+    top: 76%;
+}
+.img3D{
+    width: 278px;
+    height: 202px;
+}

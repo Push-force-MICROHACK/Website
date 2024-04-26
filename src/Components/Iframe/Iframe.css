@@ -1,0 +1,13 @@
+.iframesection {
+    margin-block: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iframesection iframe{
+    border: 3px solid;
+    width: 840px;
+    height: 469px;
+    border-radius: 20px;
+}
