@@ -1,0 +1,31 @@
+.cards{
+    width: 350px;
+    height: 205px;
+    border-radius: 10px;
+    background-color: #FFFFFF1A;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 13%;
+}
+.cards .cardsimg{
+    width: 47.99px;
+    height: 43.19px;
+}
+.cards .title{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+}
+.cards .para{
+    max-width: 300px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 334px;
+    height: 48px;
+}

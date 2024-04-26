@@ -14,7 +14,7 @@ export default function Navbar() {
         <li className='feature'>Pricing</li>
       </ul>
       <div className='buttons'>
-        <button className='button '>Get Started</button>
+        <button className='button '>Get your Api</button>
       </div>
     </div>
   )

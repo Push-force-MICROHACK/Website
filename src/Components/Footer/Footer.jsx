@@ -5,7 +5,7 @@ import { FaYoutube, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 export default function Footer() {
   return (
-    <div>
+    <div className='footersections'>
     <div className='footersection'>
       <div className='leftside'>
         <p className='footertext'>The Best API to Add To Your GED System</p>
