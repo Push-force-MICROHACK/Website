@@ -4,9 +4,24 @@
     justify-content: center;
     align-items: center;
 }
-.iframesection iframe{
+
+.iframesection iframe {
     border: 3px solid;
     width: 840px;
     height: 469px;
     border-radius: 20px;
 }
+
+.D3image2 {
+    position: absolute; 
+    left: 0;
+    margin-left: 5%;
+    top: 110%; 
+    transform: translateY(180%); 
+}
+
+.img3D2 {
+    width: 230px;
+    height: 200px;
+}
+

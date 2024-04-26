@@ -7,7 +7,7 @@ import lightning from "../../assets/lightning.svg";
 import postbox from "../../assets/post-box-usa.svg";
 import search from "../../assets/search.svg";
 import rocket from "../../assets/rocket.svg";
-import desktop from "../../assets/iz_desktop.svg"
+import desktop from "../../assets/Frame21.svg"
 import "./HelpGuide.css";
 
 export default function HelpGuid() {
