@@ -1,0 +1,73 @@
+.DEG-Page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.DEG-Page .openButton {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.DEG-Page .openButton img {
+  width: 35px;
+}
+
+.AI-menu .AI-header {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #242424;
+}
+
+.AI-menu .AI-header .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.AI-menu .AI-header .top .right-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+}
+
+.AI-menu .AI-header .top .right-part img {
+  width: 34px;
+}
+.AI-menu .AI-header .top .right-part h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.AI-menu .AI-header .top .AI-close {
+  cursor: pointer;
+}
+
+.AI-menu .AI-header h2 {
+  padding-inline: 5%;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
