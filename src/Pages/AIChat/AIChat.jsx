@@ -37,6 +37,10 @@ const AIChat = () => {
         <h2>
           HI MICRO CLUB 🙌 <br /> How can we help?
         </h2>
+        <span className="phrase">
+          Unlock the full potential of COGNICORE with our groundbreaking
+          feature!
+        </span>
       </div>
     </Box>
   );
