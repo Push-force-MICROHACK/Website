@@ -1,4 +1,5 @@
 .subscription-section {
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -84,7 +85,7 @@
   flex-direction: column;
 }
 
-.subscription-section .cards .card .info-part h2 {
+.subscription-section .cards .card.active .info-part h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -106,8 +107,21 @@
   text-fill-color: transparent;
 }
 
+.subscription-section .cards .card.inactive .info-part h2 {
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
 .subscription-section .cards .card .info-part p {
   font-style: normal;
+  text-align: center;
   font-weight: 700;
   font-size: 15.125px;
   line-height: 20px;
@@ -246,4 +260,194 @@
   border-radius: 6px !important;
   font-size: 25px;
   font-weight: 400;
+}
+
+.card.inactive {
+  transform: scale(0.8);
+}
+
+.subscription-section .bg1 {
+  position: absolute;
+  top: 40%;
+  right: 0px;
+  background: #f3ad2e;
+  border-radius: 50%;
+  font-size: 350px;
+  height: 1em;
+  width: 1em;
+  filter: blur(152px);
+  z-index: 0;
+}
+
+@media screen and (max-width: 1150px) {
+  .subscription-section .cards .card {
+    width: 354px;
+    height: 486px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .subscription-section {
+    overflow: hidden;
+  }
+  .subscription-section .cards .card {
+    width: 254px;
+    height: 386px;
+    gap: 9px;
+  }
+  .subscription-section .cards .card .reduction {
+    width: 139px;
+    height: 35px;
+  }
+  .subscription-section .cards .card .info-part h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 46px;
+  }
+  .subscription-section .cards .card .info-part p {
+    font-size: 12.125px;
+    line-height: 20px;
+  }
+
+  .subscription-section .cards .card .offer-price .old-price {
+    font-size: 42px;
+    line-height: 90px;
+  }
+  .subscription-section .cards .card .offer-price .new-price {
+    font-size: 42px;
+    line-height: 90px;
+  }
+  .subscription-section .cards .card .offer-price .old-price .barre {
+    position: absolute;
+    font-size: 42px;
+    top: 0;
+    left: 23%;
+    transform: rotate(40deg);
+  }
+  .subscription-section .cards .card .offer-price .old-price .currency {
+    position: absolute;
+    font-size: 22px;
+    top: -20px;
+    left: -5px;
+  }
+  .subscription-section .cards .card .offer-price .new-price .currency {
+    position: absolute;
+    font-size: 14px;
+    top: -20px;
+    left: -10px;
+  }
+
+  .subscription-section .cards .card .per {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .subscription-section .cards .card .users-num .counter {
+    width: 21px;
+    height: 21px;
+  }
+
+  .subscription-section .cards .card .users-num .num-users {
+    width: 92px;
+    height: 31px;
+  }
+
+  .subscription-section .cards .card .confirm,
+  .subscription-section .cards .card .other-card-btn {
+    width: 134px;
+    height: 31px;
+    font-size: 15px;
+  }
+  .subscription-section .bg1 {
+    position: absolute;
+    top: 40%;
+    background: #f3ad2e;
+    border-radius: 50%;
+    font-size: 150px;
+    height: 1em;
+    width: 1em;
+    filter: blur(152px);
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .subscription-section .cards .card {
+    width: 144px;
+    height: 236px;
+    gap: 9px;
+  }
+  .subscription-section .cards .card .reduction {
+    width: 65px;
+    height: 15px;
+    font-size: 8px;
+  }
+  .subscription-section .cards .card .info-part h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px !important;
+    line-height: 26px !important;
+  }
+  .subscription-section .cards .card .info-part p {
+    font-size: 7.125px;
+    line-height: 10px;
+  }
+  .subscription-section .cards .card .offer-price {
+    text-align: center;
+    font-size: 15px;
+  }
+  .subscription-section .cards .card .offer-price .old-price {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .subscription-section .cards .card .offer-price .new-price {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .subscription-section .cards .card .offer-price .old-price .barre {
+    position: absolute;
+    font-size: 22px;
+    top: 0;
+    left: 23%;
+    transform: rotate(40deg);
+  }
+  .subscription-section .cards .card .offer-price .old-price .currency {
+    position: absolute;
+    font-size: 8px;
+    top: -10px;
+    left: -5px;
+  }
+  .subscription-section .cards .card .offer-price .new-price .currency {
+    position: absolute;
+    font-size: 8px;
+    top: -10px;
+    left: -5px;
+  }
+  .subscription-section .cards .card .billed {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .subscription-section .cards .card .per {
+    font-size: 8px;
+    line-height: 9px;
+  }
+
+  .subscription-section .cards .card .users-num .counter {
+    width: 21px;
+    height: 21px;
+  }
+
+  .subscription-section .cards .card .users-num .num-users {
+    width: 62px;
+    height: 31px;
+    font-size: 12px;
+  }
+
+  .subscription-section .cards .card .confirm,
+  .subscription-section .cards .card .other-card-btn {
+    width: 84px;
+    height: 21px;
+    font-size: 8px;
+  }
 }

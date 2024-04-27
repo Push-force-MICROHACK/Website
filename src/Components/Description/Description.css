@@ -1,100 +1,152 @@
 .cognicore {
-    background: linear-gradient(to right, #8058B7, #C55DC6);
-    -webkit-background-clip: text; 
-    color: transparent; 
+  background: linear-gradient(to right, #8058b7, #c55dc6);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .font .text {
-    width: 100%;
-    max-width: 1062px;
-    height: 388px;
-    margin: auto;
-    text-align: center;
-    font-weight: 400 ;
-    margin-top: 5%;
-    
+  width: 100%;
+  max-width: 1062px;
+  height: 388px;
+  margin: auto;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 5%;
+  z-index: 1;
 }
-.font .text h2{
-    font-weight: 400;
-    font-size: 80px;
+.font .text h2 {
+  font-weight: 400;
+  font-size: 80px;
 }
-
 
 .font {
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .text2 {
-    width: 100%;
-    max-width: 869px;
-    height: 40px;
-    margin: auto;
+  width: 100%;
+  max-width: 869px;
+  height: 40px;
+  margin: auto;
 }
 
 .font .text2 h4 {
-    font-size: 24px;
-    font-weight: 400;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .buttons2 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-width: 250px;
-    justify-content: center;
-    margin: auto;
-    
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 250px;
+  justify-content: center;
+  margin: auto;
 }
 
 .button2 {
-    width: 170px;
-    height: 44px;
-    text-align: center;
-    align-items: center;
-    border-radius: 4px !important;
-    color: white;
-    background: linear-gradient(to right, #8058B7, #C55DC6);
-    border: 2px solid #c45dc688; 
-    margin-top: 15%;
-    font-weight: 600;
+  width: 170px;
+  height: 44px;
+  text-align: center;
+  align-items: center;
+  border-radius: 4px !important;
+  color: white;
+  background: linear-gradient(to right, #8058b7, #c55dc6);
+  border: 2px solid #c45dc688;
+  margin-top: 15%;
+  font-weight: 600;
 }
 
 .D3image {
+  position: absolute;
+  right: 6%;
+  top: 76%;
+}
+.img3D {
+  width: 278px;
+  height: 202px;
+}
+
+.font .bg1 {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  background: #16446c;
+  border-radius: 50%;
+  font-size: 350px;
+  height: 1em;
+  width: 1em;
+  filter: blur(152px);
+  z-index: 0;
+}
+.font .bg2 {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  background: #9e6ee647;
+  border-radius: 50%;
+  font-size: 350px;
+  height: 1em;
+  width: 1em;
+  filter: blur(142px);
+
+  z-index: 0;
+}
+@media (max-width: 990px) {
+  .font {
+    padding-inline: 20px;
+    overflow: hidden;
+  }
+  .font .text h2 {
+    font-size: 30px;
+  }
+  .font .text2 h4 {
+    font-size: 17px;
+  }
+  .font .text {
+    height: 180px;
+  }
+  .button2 {
+    width: 140px;
+    height: 40px;
+  }
+  .buttons2 {
+    margin-bottom: 15%;
+  }
+  .D3image {
     position: absolute;
-    right: 6%;
-    top: 76%;
-}
-.img3D{
-    width: 278px;
-    height: 202px;
-}
-@media (max-width: 990px){
-    .font{
-        margin-inline: 20px;
-    }
-    .font .text h2{
-        font-size: 30px;
-    }
-    .font .text2 h4{
-        font-size: 17px;
-    }
-    .font .text{
-        height: 180px;
-    }
-    .button2{
-        width: 140px;
-        height: 40px;
-    }
-    .buttons2{
-        margin-bottom: 15%;
-    }
-    .D3image {
-        position: absolute;
-        right: 2%;
-        top: 50%;
-    }
-    .img3D{
-        width: 178px;
-        height: 102px;
-    }
+    right: 2%;
+    top: 50%;
+  }
+  .img3D {
+    width: 178px;
+    height: 102px;
+  }
+
+  .font .bg1 {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background: #16446c;
+    border-radius: 50%;
+    font-size: 200px;
+    height: 1em;
+    width: 1em;
+    filter: blur(102px);
+    z-index: 0;
+  }
+  .font .bg2 {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background: #9e6ee647;
+    border-radius: 50%;
+    font-size: 200px;
+    height: 1em;
+    width: 1em;
+    filter: blur(102px);
+
+    z-index: 0;
+  }
 }

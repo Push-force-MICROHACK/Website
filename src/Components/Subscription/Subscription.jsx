@@ -8,6 +8,7 @@ const Subscription = () => {
   const [CompanyNumUsers, setCompanyNumber] = useState(10);
   return (
     <section className="subscription-section">
+      <div className="bg1"></div>
       <h2 className="sub-title">
         Built For <br /> <span>High-Performing Teams</span>
       </h2>
@@ -30,7 +31,7 @@ const Subscription = () => {
         </button>
       </div>
       <div className="cards">
-        <div className="card">
+        <div className="card inactive">
           <div className="info-part">
             <h2 className="offer-title">STARTER</h2>
             <p className="offer-description">for individuals and small teams</p>
@@ -71,7 +72,7 @@ const Subscription = () => {
           </div>
           <button className="other-card-btn">GET STARTED</button>
         </div>
-        <div className="card">
+        <div className="card active">
           <span className="reduction">33% SAVINGS</span>
           <div className="info-part">
             <h2 className="offer-title">GROWTH</h2>
@@ -119,7 +120,7 @@ const Subscription = () => {
           </div>
           <button className="confirm">CONFIRM</button>
         </div>
-        <div className="card">
+        <div className="card inactive">
           <div className="info-part">
             <h2 className="offer-title">ENTERPRISE</h2>
             <p className="offer-description">for larger teams</p>

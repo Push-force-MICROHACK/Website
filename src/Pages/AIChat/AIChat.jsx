@@ -6,6 +6,9 @@ import Drawer from "@mui/material/Drawer";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
+import Slide from "@mui/material/Slide";
 import { IoIosCloseCircleOutline, IoIosSend } from "react-icons/io";
 import DEG from "../../assets/DEG.png";
 import logo from "../../assets/Frame2.svg";
@@ -42,17 +45,43 @@ function getStyles(name, personName, theme) {
   };
 }
 
+function SlideTransition(props) {
+  return <Slide {...props} direction="down" />;
+}
+
 const AIChat = () => {
   const [open, setOpen] = useState(false);
+  const [alerter, setAlerter] = useState(false);
   const [category, setCategory] = useState("Human Ressources");
   const theme = useTheme();
-  const [personPrivilege, setPersonPrivilege] = useState([]);
+  const [personPrivilege, setPersonPrivilege] = useState("");
+  const [inputText, setInputText] = useState("");
 
   const handleChange = (event) => {
-    const {
-      target: { value },
-    } = event;
-    setPersonPrivilege(typeof value === "string" ? value.split(",") : value);
+    setPersonPrivilege(event.target.value);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setAlerter(false);
+  };
+
+  const handleSend = () => {
+    const dataToSend = {
+      category,
+      personPrivilege,
+      inputText,
+    };
+    if (personPrivilege === "") {
+      setAlerter(true);
+    } else if (inputText === "") {
+      setAlerter(true);
+    } else {
+      alert(JSON.stringify(dataToSend));
+      setInputText("");
+    }
   };
 
   const toggleDrawer = (newOpen) => () => {
@@ -90,13 +119,6 @@ const AIChat = () => {
           value={personPrivilege}
           onChange={handleChange}
           input={<OutlinedInput />}
-          renderValue={(selected) => {
-            if (selected.length === 0) {
-              return <em>Choose position</em>;
-            }
-
-            return selected.join(", ");
-          }}
           className="select"
           MenuProps={MenuProps}
           inputProps={{ "aria-label": "Without label" }}
@@ -165,9 +187,19 @@ const AIChat = () => {
           />
         </div>
         <div className="writing-input">
-          <input type="text" placeholder="Write your prompt..." />
+          <input
+            type="text"
+            placeholder="Write your prompt..."
+            value={inputText}
+            onChange={(e) => setInputText(e.target.value)}
+          />
           <img src={newconv} alt="newconv" />
-          <IoIosSend color="#00000057" size={20} className="send" />
+          <IoIosSend
+            color="#00000057"
+            size={20}
+            className="send"
+            onClick={handleSend}
+          />
         </div>
       </div>
     </Box>
@@ -182,6 +214,22 @@ const AIChat = () => {
       <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
         {DrawerList}
       </Drawer>
+      <Snackbar
+        open={alerter}
+        autoHideDuration={3000}
+        onClose={handleClose}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+        TransitionComponent={SlideTransition}
+      >
+        <Alert
+          onClose={handleClose}
+          severity="warning"
+          variant="filled"
+          sx={{ width: "100%" }}
+        >
+          Please choose a position and write a prompt
+        </Alert>
+      </Snackbar>
     </div>
   );
 };
