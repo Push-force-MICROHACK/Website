@@ -17,11 +17,21 @@ color: white;
     align-items: center;
     text-align: center;
 }
+.rightsidenavbar{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
 .features1{
     display: flex;
     flex-direction: row;
-    width: 35% ;
     justify-content: space-between;
+    width: 430px;
+    height: 24px;
+    top: 16px;
+    left: 320px;
 }
 .logo{
     display: flex;
@@ -38,12 +48,7 @@ height: 55px;
 .textlogo{
     font-size: 20px;
 }
-.features1{
-    width: 430px;
-    height: 24px;
-    top: 16px;
-    left: 320px;
-}
+
 .feature{
     font-size: 18px;
 }
@@ -60,9 +65,52 @@ height: 55px;
     font-weight: 500;
     cursor: pointer;
 }
+.navbar .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
 
-
-
-
-
-
+.menubar{
+    font-size: 50px;
+}
+@media (max-width: 990px) {
+    .navbar .menu,
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; 
+    }
+  
+    .navbar {
+      flex-direction: column; 
+      align-items: center; 
+      padding-top: 0.75rem; 
+    }
+  
+    .navbar .rightsidenavbar {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+    }
+    .navbar .rightsidenavbar.open {
+      display: flex;
+      flex-direction: column; 
+      margin-top: 5%;
+    }
+    .navbar .rightsidenavbar.open ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .rightsidenavbar.open .button1{
+        margin-top: 15%;
+        margin-left: 5%;
+    }
+}
+  

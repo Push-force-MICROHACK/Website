@@ -6,7 +6,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 1312px;
+  width: 93%;
   height: 313px;
   background-color: #FFFFFF1A;
   margin: auto;
@@ -53,7 +53,23 @@
   margin-top: 3%;
   margin-bottom: 8%;
 }
+
   @media (max-width: 1068px) {
+    .allguide{
+      width: 85% ;
+      height: 214px;
+    }
+    .allguide .desktop{
+      width: 420px !important;
+      height: 212px !important;
+    }
+    .leftside2 h4{
+      font-size: 25px;
+    }
+    .leftside2 p{
+      font-size: 12px;
+      max-width: 300px;
+    }
     .card-grid {
       grid-template-columns: repeat(2, 1fr); 
     }
@@ -63,5 +79,50 @@
     .card-grid {
       grid-template-columns: repeat(1, 1fr); 
     }
+    .allguide{
+      width: 85% ;
+      height: 214px;
+    }
+    .allguide .desktop{
+      width: 400px !important;
+      height: 152px !important;
+    }
+    .leftside2 h4{
+      font-size: 17px;
+    }
+    .leftside2 p{
+      font-size: 12px;
+      max-width: 250px;
+    }
+  }
+  @media (max-width:600px){
+    .allguide{
+      display: flex;
+      flex-direction: column;
+      height: 340px;
+    }
+    .allguide h4{
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .allguide p{
+      font-size: 13px;
+    }
+    .leftside2{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      margin: auto;
+    
+    }
+    .allguide .desktop{
+      width: 380px !important;
+      height: 212px !important;
+    }
+    .leftside2 .rocket{
+      margin-right: 20px;
+    }
+   
   }
   

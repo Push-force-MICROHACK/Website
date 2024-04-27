@@ -68,3 +68,33 @@
     width: 278px;
     height: 202px;
 }
+@media (max-width: 990px){
+    .font{
+        margin-inline: 20px;
+    }
+    .font .text h2{
+        font-size: 30px;
+    }
+    .font .text2 h4{
+        font-size: 17px;
+    }
+    .font .text{
+        height: 180px;
+    }
+    .button2{
+        width: 140px;
+        height: 40px;
+    }
+    .buttons2{
+        margin-bottom: 15%;
+    }
+    .D3image {
+        position: absolute;
+        right: 2%;
+        top: 50%;
+    }
+    .img3D{
+        width: 178px;
+        height: 102px;
+    }
+}

@@ -13,9 +13,7 @@ export default function Home() {
       <div id="features" className="space-sections"><Features/></div>
       <div id="subscription" className="space-sections"><Subscription/></div>
       <div id="help-guide" className="space-sections"><HelpGuid/></div>
-      <div className="space-sections">
-        <Description />
-      </div>
+   
     </div>
   );
 }

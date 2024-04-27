@@ -102,3 +102,14 @@ width: 24px;
 height: 24px;
 cursor: pointer;
 }
+@media (max-width:1200px){
+   .footersection{
+    width: 400px;
+   }
+   .footertext{
+    font-size: 15px;
+   }
+   .rightside{
+    width: 150px;
+   }
+}
