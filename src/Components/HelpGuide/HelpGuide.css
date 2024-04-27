@@ -124,8 +124,15 @@
   }
   .cards1 {
     margin-inline: auto;
-    width: 90%;
+    width: 60%;
     padding-inline: 5px;
+  }
+  .cards1 .title{
+    font-size: 0.9em ;
+  }
+  .cards1 .para{
+    font-size: 0.6em;
+    max-width: 80%;
   }
 }
 @media (max-width:420px){

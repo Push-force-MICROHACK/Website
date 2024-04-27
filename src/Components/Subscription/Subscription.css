@@ -376,7 +376,91 @@
     overflow: hidden;
   }
   .subscription-section .cards .card {
-    width: 144px;
+    width: 35%;
+    height: 236px;
+    gap: 9px;
+  }
+  .subscription-section .cards .card .reduction {
+    width: 65px;
+    height: 15px;
+    font-size: 8px;
+  }
+  .subscription-section .cards .card .info-part h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px !important;
+    line-height: 26px !important;
+  }
+  .subscription-section .cards .card .info-part p {
+    font-size: 7.125px;
+    line-height: 10px;
+  }
+  .subscription-section .cards .card .offer-price {
+    text-align: center;
+    font-size: 15px;
+  }
+  .subscription-section .cards .card .offer-price .old-price {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .subscription-section .cards .card .offer-price .new-price {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .subscription-section .cards .card .offer-price .old-price .barre {
+    position: absolute;
+    font-size: 22px;
+    top: 0;
+    left: 23%;
+    transform: rotate(40deg);
+  }
+  .subscription-section .cards .card .offer-price .old-price .currency {
+    position: absolute;
+    font-size: 8px;
+    top: -10px;
+    left: -5px;
+  }
+  .subscription-section .cards .card .offer-price .new-price .currency {
+    position: absolute;
+    font-size: 8px;
+    top: -10px;
+    left: -5px;
+  }
+  .subscription-section .cards .card .billed {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .subscription-section .cards .card .per {
+    font-size: 8px;
+    line-height: 9px;
+  }
+
+  .subscription-section .cards .card .users-num .counter {
+    width: 21px;
+    height: 21px;
+  }
+
+  .subscription-section .cards .card .users-num .num-users {
+    width: 62px;
+    height: 31px;
+    font-size: 12px;
+  }
+
+  .subscription-section .cards .card .confirm,
+  .subscription-section .cards .card .other-card-btn {
+    width: 84px;
+    height: 21px;
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .subscription-section .cards {
+    overflow: hidden;
+  }
+  .subscription-section .cards .card {
+    width: 35%;
     height: 236px;
     gap: 9px;
   }

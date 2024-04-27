@@ -121,6 +121,8 @@
 @media screen and (max-width: 440px) {
   .footersection {
     flex-direction: column;
+    width: 90%;
+   margin-inline: 15%;
   }
   .leftside {
     width: 100%;
@@ -128,7 +130,7 @@
     padding-bottom: 30px;
   }
   .leftside .footertext {
-    font-size: 25px;
+    font-size: 0.7rem;
     line-height: 35px;
     margin-inline: 5%;
   }
@@ -136,10 +138,10 @@
    margin-inline: 5%;
   }
   .rightsides .title{
-    font-size: 13px;
+    font-size: 0.6rem;
   }
   .rightsides .details li{
-    font-size: 10px;
+    font-size: 0.4rem;
   }
   .leftside,
   .rightside {
@@ -152,5 +154,16 @@
     gap: 10px;
     width: auto;
   }
+  .socialaccount .part1 img{
+    width: 15%;
+  }
+  .socialaccount .part1 h3{
+    font-size: 0.4em;
+    margin-left: 0;
+  }
+  .socialaccount .part2 .icon{
+    width: 10%;
+  }
+
 }
 
