@@ -64,8 +64,10 @@ export default function HelpGuid() {
         <div className='allguide'>
             <div className='leftside2'>
                <img src={rocket} alt="" className='rocket' />
+               <div>
                <h4>Become COGNICORIAN</h4>
                <p>Learn to become a power user of COGNICOR in 15 minutes or less</p>
+               </div>
             </div>
             <img src={desktop} alt="" className='desktop' />
         </div>

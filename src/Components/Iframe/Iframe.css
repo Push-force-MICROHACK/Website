@@ -24,4 +24,23 @@
     width: 230px;
     height: 200px;
 }
+@media (max-width: 990px){
+    .iframesection iframe {
+        border: 3px solid;
+        width: 390px;
+        height: 269px;
+        border-radius: 20px;
+    }
 
+    .D3image2 {
+        position: absolute; 
+        left: 0;
+        margin-left: -2%;
+        top: 75%; 
+        transform: translateY(180%); 
+    }
+    .img3D2 {
+        width: 130px;
+        height: 100px;
+    }
+}
