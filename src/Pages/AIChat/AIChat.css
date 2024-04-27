@@ -22,6 +22,10 @@
   width: 35px;
 }
 
+.AI-menu {
+  position: relative;
+  height: 100%;
+}
 .AI-menu .AI-header {
   position: relative;
   width: 100%;
@@ -30,7 +34,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  background-color: #242424;
+  background-color: #091016;
 }
 
 .AI-menu .AI-header .top {
@@ -89,4 +93,137 @@
   font-size: 14px;
   line-height: 24px;
   color: #000000;
+}
+
+.AI-menu .AI-header .bg1 {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: #16446c;
+  border-radius: 50%;
+  font-size: 150px;
+  height: 1em;
+  width: 1em;
+  filter: blur(62px);
+}
+.AI-menu .AI-header .bg2 {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  background: #9e6ee647;
+  border-radius: 50%;
+  font-size: 90px;
+  height: 1em;
+  width: 1em;
+  filter: blur(32px);
+}
+
+.AI-menu .AI-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.AI-menu .AI-footer .writing-input {
+  width: 90%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  border: 2px solid #00000057;
+  border-radius: 20px;
+}
+
+.AI-menu .AI-footer .writing-input input {
+  width: 88%;
+  height: 100%;
+  background-color: white;
+  color: #000000;
+  border: none;
+}
+.AI-menu .AI-footer .writing-input input:focus {
+  outline: none !important;
+  border: none;
+}
+
+.AI-menu .AI-footer .writing-input .send,
+.AI-menu .AI-footer .writing-input img {
+  cursor: pointer;
+}
+
+.AI-menu .AI-footer .chips {
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow-x: scroll;
+  padding: 0 !important;
+  scroll-padding: 0 !important;
+}
+.AI-menu .AI-footer .chips::-webkit-scrollbar {
+  width: 0.1px;
+}
+.AI-menu .AI-footer .chips .hr {
+  background-color: #ffa39e;
+  color: #f5222d;
+}
+.AI-menu .AI-footer .chips .hr.active {
+  color: #ffa39e;
+  background-color: #f5222d;
+}
+.AI-menu .AI-footer .chips .af {
+  background-color: #adc6ff;
+  color: #2f54eb;
+}
+.AI-menu .AI-footer .chips .af.active {
+  color: #adc6ff;
+  background-color: #2f54eb;
+}
+.AI-menu .AI-footer .chips .marketing {
+  background-color: #ffd591;
+  color: #fa8c16;
+}
+.AI-menu .AI-footer .chips .marketing.active {
+  color: #ffd591;
+  background-color: #fa8c16;
+}
+.AI-menu .AI-footer .chips .it {
+  background-color: #d3adf7;
+  color: #722ed1;
+}
+.AI-menu .AI-footer .chips .it.active {
+  color: #d3adf7;
+  background-color: #722ed1;
+}
+.AI-menu .AI-footer .chips .rd {
+  background-color: #b7eb8f;
+  color: #52c41a;
+}
+.AI-menu .AI-footer .chips .rd.active {
+  color: #b7eb8f;
+  background-color: #52c41a;
+}
+.AI-menu .AI-footer .chips .prod {
+  background-color: #f691ff;
+  color: #f516fa;
+}
+.AI-menu .AI-footer .chips .prod.active {
+  color: #f691ff;
+  background-color: #f516fa;
+}
+
+.AI-menu .select {
+  border-radius: 10px;
+  width: 241px;
+  height: 37px;
+  margin: 55px 0 0 20px;
 }
