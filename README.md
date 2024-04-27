@@ -1,6 +1,6 @@
 # AI Co-Pilot for EDM Website
 
-![Image Alt Text](/Users/no/MICROHACK/src/assets/Frame2.svg)
+![Image Alt Text](https://raw.githubusercontent.com/Push-force-MICROHACK/Website/b7cbb6b9cd12d677f019c9191e9fdf54f72e0917/src/assets/Frame2.svg)
 
 This project is a web application designed to enhance the experience of Electronic Dance Music (EDM) enthusiasts by providing an AI co-pilot plugin. The AI co-pilot assists users in generating music, discovering new tracks, and enhancing their overall EDM journey. The project is built using React, JSX, and Material UI, offering a modern and intuitive user interface.
 
