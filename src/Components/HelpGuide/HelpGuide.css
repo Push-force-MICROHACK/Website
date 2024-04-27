@@ -124,5 +124,7 @@
   }
   .cards1 {
     margin-inline: auto;
+    width: 90%;
+    padding-inline: 5px;
   }
 }

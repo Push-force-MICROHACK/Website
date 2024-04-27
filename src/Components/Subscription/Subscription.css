@@ -372,6 +372,9 @@
 }
 
 @media screen and (max-width: 440px) {
+  .subscription-section .cards {
+    overflow: hidden;
+  }
   .subscription-section .cards .card {
     width: 144px;
     height: 236px;

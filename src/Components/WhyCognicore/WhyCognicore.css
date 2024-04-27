@@ -96,38 +96,52 @@
   justify-content: flex-end;
   padding: 5%;
 }
-@media (max-width:1200px){
-  .Why-Card-Header h3{
+@media (max-width: 1200px) {
+  .Why-Card-Header h3 {
     font-size: 15px !important ;
   }
 }
-@media (max-width:990px){
-  .Why-Card-Container{
+@media (max-width: 990px) {
+  .Why-Card-Container {
     display: flex;
     flex-direction: column;
   }
-  .Why-Card{
+  .Why-Card {
     width: 70%;
     margin-bottom: 20px;
     min-height: 360px !important;
   }
-  .Why-Card-Header h3{
+  .Why-Card-Header h3 {
     font-size: 20px !important ;
   }
-  .sub-title{
+  .sub-title {
     font-size: 34px !important;
     margin-top: 5%;
   }
 
-.Why-Card-Content {
-  height: 200px;
+  .Why-Card-Content {
+    height: 200px;
+  }
 
+  .Why-Card-Content p {
+    font-size: 16px !important ;
+  }
+  .Why-Card-Footer h4 {
+    font-size: 12px;
+  }
 }
 
-  .Why-Card-Content p{
-    font-size: 16px !important ;
-  } 
-  .Why-Card-Footer h4{
-    font-size: 12px;
+@media (max-width: 440px) {
+  .Why-Card-Header {
+    height: auto;
+  }
+  .Why-Card-Content {
+    height: auto;
+  }
+  .Why-Card-Footer {
+    height: auto;
+  }
+  .Why-Card-Header h3 {
+    line-height: 30px !important ;
   }
 }

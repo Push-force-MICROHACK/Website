@@ -122,4 +122,24 @@
   .footersection {
     flex-direction: column;
   }
+  .leftside {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .leftside .footertext {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .leftside,
+  .rightside {
+    padding-inline: 10px;
+  }
+  .rightside {
+    gap: 15px;
+  }
+  .socialaccount .part2 {
+    gap: 10px;
+    width: auto;
+  }
 }
