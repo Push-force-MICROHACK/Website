@@ -45,7 +45,24 @@
   }
 }
 @media (max-width: 440px) {
+  .iframesection{
+    margin-bottom: 16% !important;
+  }
   .iframesection iframe {
     width: 90%;
+  }
+  .iframesection .D3image2{
+    top: 65%;
+  }
+}
+@media (max-width: 360px) {
+  .iframesection{
+    margin-bottom: 16% !important;
+  }
+  .iframesection iframe {
+    width: 90%;
+  }
+  .iframesection .D3image2{
+    top: 73%;
   }
 }

@@ -160,4 +160,7 @@
     grid-template-columns: 1fr !important;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr !important;
   }
+  .features .sub-title{
+    font-size: 25px !important;
+  }
 }

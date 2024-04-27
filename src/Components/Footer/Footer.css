@@ -130,6 +130,16 @@
   .leftside .footertext {
     font-size: 25px;
     line-height: 35px;
+    margin-inline: 5%;
+  }
+  .rightsides{
+   margin-inline: 5%;
+  }
+  .rightsides .title{
+    font-size: 13px;
+  }
+  .rightsides .details li{
+    font-size: 10px;
   }
   .leftside,
   .rightside {
@@ -143,3 +153,4 @@
     width: auto;
   }
 }
+

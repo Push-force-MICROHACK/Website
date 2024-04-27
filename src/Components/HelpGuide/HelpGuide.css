@@ -128,3 +128,18 @@
     padding-inline: 5px;
   }
 }
+@media (max-width:420px){
+  .allguide h4 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .allguide p {
+    font-size: 13px;
+  }
+  .leftside2 .rocket {
+  width: 10%;
+  }
+  .allguide .desktop {
+    width: 97% !important;
+  }
+}

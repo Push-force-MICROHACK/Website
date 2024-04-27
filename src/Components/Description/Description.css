@@ -150,3 +150,14 @@
     z-index: 0;
   }
 }
+@media (max-width:400px){
+    .D3image {
+        position: absolute;
+        top: 70%;
+        left: 60%;
+      }
+      .img3D {
+        width: 178px;
+        height: 102px;
+      }
+}
