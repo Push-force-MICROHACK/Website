@@ -56,6 +56,8 @@ const AIChat = () => {
   const theme = useTheme();
   const [personPrivilege, setPersonPrivilege] = useState("");
   const [inputText, setInputText] = useState("");
+  const [messageSent, setMessageSent] = useState("");
+  const [queryResult, setQueryResult] = useState("");
 
   const handleChange = (event) => {
     setPersonPrivilege(event.target.value);
@@ -74,15 +76,23 @@ const AIChat = () => {
       personPrivilege,
       inputText,
     };
-    if (personPrivilege === "") {
-      setAlerter(true);
-    } else if (inputText === "") {
+    if (personPrivilege === "" || inputText === "") {
       setAlerter(true);
     } else {
-      alert(JSON.stringify(dataToSend));
-      setInputText("");
+      setMessageSent(inputText);
+  
+      setTimeout(() => {
+        const staticResponse = "8,48%";
+  
+        setQueryResult(staticResponse);
+      }, 1000); 
+  
+      setInputText(""); 
     }
   };
+  
+  
+
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -136,7 +146,13 @@ const AIChat = () => {
             </MenuItem>
           ))}
         </Select>
+        <div className={`Ai-Messages ${messageSent !== '' ? 'show-background' : 'inactive-bg'}`}>
+  <div className="message-sent">{messageSent}</div>
+  <div className="result">{queryResult}</div>
+</div>
+
       </div>
+      
       <div className="AI-footer">
         <div className="chips">
           <Chip
